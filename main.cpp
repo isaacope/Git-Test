@@ -14,6 +14,8 @@ using namespace std;
 
 int sum(int n);
 
+int product(int n);
+
 int main() {
   cout << "Hello World!" << endl;
 
@@ -21,6 +23,9 @@ int main() {
   cout << "Enter a number n: ";
   cin >> n;
   cout << "The sum of 1 to n is " << sum(n) << endl;
+  cout << "Enter a number n: ";
+  cin >> n;
+  cout << "The product of 1 to n is " << product(n) << endl;
   
   return 0;
 }
@@ -31,4 +36,12 @@ int sum(int n) {
     sum += i;
   }
   return sum;
+}
+
+int product(int n) {
+  int pro = 1;
+  for(int i = 1; i <= n; i++) {
+    pro *= i;
+  }
+  return pro;
 }
